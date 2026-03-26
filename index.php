@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Home | Bike King Borders</title>
+    <meta name="description" content="A wide range of high-quality bicycles for sale or for hire, with servicing also available on-site. The ideal one-stop shop located nearby some beautiful, graded trails in the Scottish Borders for your biking needs.">
+
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<?php set_include_path('./include') ?>
+
+<body>
+    <?php include 'header.php' ?>
+    <main>
+        <h2 class="league-spartan banner">Special Offers - Bicycles for Sale</h2>
+            <section class="gallery">
+                <article class="cardOffer">
+                    <img src="./images/adultbike1.jpg" alt="Cannondale brand bicycle in grey/black" class="offerImage">
+                    <p class="offerBrand">Cannondale</p>
+                    <p class="offerName">Synapse Disc Tiagra (2017) Road Bike 3</p>
+                    <p class="offerPrice">£950</p>
+                </article>
+                <article class="cardOffer">
+                    <img src="./images/adultbike2.jpg" alt="Cube brand bicycle in grey/orange" class="offerImage">
+                    <p class="offerBrand">Cube Bikes</p>
+                    <p class="offerName">Attain Race Disc (2017) Road Bike</p>
+                    <p class="offerPrice">£1,099</p>
+                </article>
+                <article class="cardOffer">
+                    <img src="./images/adultbike3.jpg" alt="Whyte brand bicycle in pink" class="offerImage">
+                    <p class="offerBrand">Whyte</p>
+                    <p class="offerName">Women's Ridgeway Bike</p>
+                    <p class="offerPrice">£625</p>
+                </article>
+                <article class="cardOffer">
+                    <img src="./images/adultbike4.jpg" alt="Trek brand bicycle in black" class="offerImage">
+                    <p class="offerBrand">Trek</p>
+                    <p class="offerName">Superfly 5 (2017) Mountain Bike</p>
+                    <p class="offerPrice">£775</p>
+                </article>
+                <article class="cardOffer">
+                    <img src="./images/adultbike5.jpg" alt="Trek brand bicycle in grey/orange" class="offerImage">
+                    <p class="offerBrand">Trek</p>
+                    <p  class="offerName">Superfly 20</p>
+                    <p class="offerPrice">£279</p>
+                </article>
+                <article class="cardOffer">
+                    <img src="./images/kidsbike1.jpg" alt="Cube bicycle in green" class="offerImage">
+                    <p class="offerBrand">Cube Bikes</p>
+                    <p class="offerName">Kid 240</p>
+                    <p class="offerPrice">£360</p>
+                </article>
+                
+                <a href="shop.php" class="button">Shop More Bicycles</a>
+            </section>
+
+        <h2 class="league-spartan banner">Bike Servicing</h2>
+            <section class="serviceContainer">
+                <article class="cardService">
+                    <h3 class="league-spartan">Gears</h3>
+
+                    <ul>
+                        <li>Full bike inspection and report</li>
+                        <li>Gear cables checked for stretch and wear</li>
+                        <li>Chain checked for stretch and wear</li>
+                        <li>Chain and derailleurs removed and cleaned</li>
+                        <li>Chain replacement if required</li>
+                        <li>Cable replacement if required</li>
+                        <li>Parts refitted and lubricated</li>
+                        <li>Gears fully re-indexed</li>
+                    </ul>
+
+                    <a href="services.php" class="button">Read more about our Gear Servicing</a>
+                </article>
+
+                <article class="cardService">
+                    <h3 class="league-spartan">Brakes</h3>
+
+                    <ul>
+                        <li>Full bike inspection and report</li>
+                        <li>Brake cables checked for stretch and wear</li>
+                        <li>Hoses checked for wear and tear</li>
+                        <li>Pad condition checked and replaced if required</li>
+                        <li>Braking surfaces checked and cleaned</li>
+                        <li>Cables replaced where required</li>
+                        <li>Brakes checked and serviced</li>
+                        <li>Full caliper alignment</li>
+                    </ul>
+
+                    <a href="services.php" class="button">Read more about our Brake Servicing</a>
+                </article>
+
+                <article class="cardService">
+                    <h3 class="league-spartan">Wheels</h3>
+
+                    <ul>
+                        <li>Full bike inspection and report</li>
+                        <li>Wheels wiped and cleaned</li>
+                        <li>Bearings checked and serviced</li>
+                        <li>Alignment checked and adjusted</li>
+                        <li>Spokes adjusted and replaced when necessary</li>
+                        <li>Tyres condition checked and replaced if required</li>
+                        <li>Full wheel rebuild</li>
+                        <li>Additional labour charges if required</li>
+                    </ul>
+
+                    <a href="services.php" class="button">Read more about our Wheel Servicing</a>
+                </article>
+            </section>
+    </main>
+    <?php include 'footer.php' ?>
+</body>
+</html>

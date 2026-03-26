@@ -1,0 +1,890 @@
+/* CORE */
+
+* {
+    box-sizing: border-box;
+    max-width: 1600px;
+    margin: 0 auto;
+    
+    font: 1.05rem 'Roboto', sans-serif;
+}
+
+body {
+    background: #444a40;
+    filter: drop-shadow(0px 1px 5px black)
+}
+
+main {
+    background: #c29a74;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+    flex: 1 1;
+    padding: 1.5% 0 0 0;
+    
+    background: darkolivegreen;
+}
+
+    .heading {
+        display: flex;
+        margin: 2rem auto;
+        align-items: center;
+    }
+    
+    .logo {
+        justify-self: left;
+    }
+    
+    .titleContainer {
+        align-content: center;
+        padding-left: 1.7rem;
+    }
+    
+    .title {
+        margin: 2rem 0;
+    }
+
+    .subtitle {
+            font-size: 3.5rem;
+            letter-spacing: .3rem;
+            margin-left: 1px;
+            text-transform: uppercase;
+            font-weight: 250;
+        }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+    justify-content: stretch;
+
+    background: darkolivegreen;
+    padding: 4rem 7.5% 3rem 7.5%;
+    /* filter: drop-shadow(0px 2px 5px black); */
+}
+
+    .footerInfo {
+        display: flex;
+    }
+
+    footer > div {
+        line-height: 2rem;
+        width: 100%;
+    }
+
+    .address, .hours, .contact {
+        /* margin: 0 1rem; */
+        width: 100%;
+    }
+
+    .address {
+        text-align: left;
+    }
+
+    .hours {
+        text-align: center;
+    }
+
+    .contact {
+        text-align: right;
+    }
+
+section {
+    padding: 5%;
+}
+
+
+
+/* NAVIGATION */
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color: #111;
+    font-size: 1.35rem;
+    font-weight: 450;
+}
+
+    .heading > a {
+        text-align: left;
+    }
+
+    nav > a {
+        color: #dddfe8;
+        height: 100%;
+        padding: 1.2rem 2rem 0 2rem;
+    }
+
+    nav > a:hover {
+        background: #d7591a;
+    }
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    padding: 0 15%;
+    background: #2f2a22;
+    border-top: 3px solid #d7591a;
+    /* border-bottom: 2px solid #d7591a; */
+}
+
+.button {
+    background: #2f2a22;
+    border: 3px solid #444a40;
+    color: whitesmoke;
+    border-radius: 5px;
+    padding: .6rem 1.2rem;
+    margin-top: 1rem;
+}
+
+.button:hover {
+    background: #d7591a;
+    border: 2px solid #2f2a22;
+}   
+
+    section > .button {
+        grid-column-start: span 3;
+        justify-self: end;
+        align-self: end;
+    }
+    
+    .gallery > .button {
+        width: 30%;
+    }
+
+    article > .button {
+        padding: .8rem 0;
+        width: 100%;
+
+        border: none;
+        border-radius: 0 0 8px 8px;
+        border-top: 1px solid #2f2a22;
+    }
+
+        article > .button:hover {
+            border: 1px solid #2f2a22;
+        }
+    
+    
+    
+    /* TEXT */
+
+p {
+    margin: 1rem 0;
+}
+
+    .aboutInfoText > p {
+    color: #dddfe8;
+    font-size: 1.15rem;
+    padding: 1rem 3rem;
+    }
+
+
+        .aboutInfoText > p {
+            padding: 0 3rem;
+        } /* for some reason, the Our Business part of the About Us section doesn't retain its desired dimensions without this*/
+
+        .aboutShop > .aboutInfo > h3 {
+            padding-left: 3rem;
+        }
+
+    .aboutArea {
+        text-align: right;
+    }
+
+    .cardService > p {
+        padding: 2rem;
+        line-height: 1.8rem;
+        text-align: justify;
+    }
+
+    .cardHire > p {
+        padding: 0 2rem;
+        line-height: 2.5rem;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    
+    .termsHire {
+        text-align: center;
+        padding: 0 0 2rem 0;
+    }
+    
+    .termsHire > p {
+        line-height: 2rem;
+        color: #2f2a22;
+        }
+    
+h1 {
+    font-size: 5.25rem;
+    font-weight: 550;
+    line-height: 4.35rem;
+}
+
+h2 {
+    padding: 2rem 0 1.5rem 5.5%;
+    margin: 0 auto;
+    
+    background: brown;
+    color: whitesmoke;
+    font-size: 2rem;
+    font-weight: 550;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+    .aboutInfo > h3 {
+        background: #d7591a;
+        width: 100%;
+        margin: 0;
+        padding: 1rem 1rem;
+
+        outline: 1px solid #2f2a22;
+    }
+
+        .aboutArea > .aboutInfo > h3 {
+            padding-right: 3rem;
+            
+            background: darkolivegreen;           
+        }
+
+    .cardService > h3 {
+        width: 100%;
+        padding: 1rem 0;
+        
+        background: #d7591a;
+        border-bottom: 1px solid #2f2a22;
+        border-radius: 8px 8px 0 0;
+        
+        text-align: center;
+    }
+
+    .cardHire > h3 {
+        width: 100%;
+        padding: 1rem 0;
+        
+        background: darkolivegreen;
+        border-bottom: 1px solid #2f2a22;
+        border-radius: 8px 8px 0 0;
+        
+        text-align: center;
+    }
+
+    form > h4 {
+        margin-top: 3rem;
+    }
+
+    .cardEvents > h3 {
+        width: 100%;
+        min-height: fit-content;
+        height: 25%;
+        background: #d7591a;
+        padding: 1rem;
+    }
+    
+    .cardEvents > p {
+        margin: 0;
+        padding: 0 1rem;
+        color: #dddfe8;
+    }
+    
+h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+}
+
+ul {
+    padding-bottom: 1rem;
+}
+
+    li {
+        margin: 1rem 0;
+    }
+
+aside {
+    line-height: 1.5rem;
+    padding: 0;
+}
+
+strong {
+    font-weight: 500;
+    font-size: inherit;
+    color: wheat;
+}
+
+.league-spartan {
+    font-family: 'League Spartan', sans-serif;
+}
+
+.offerBrand, .offerPrice, .offerName {
+    line-height: 2.3rem;
+    margin: 0;
+}
+
+    .offerBrand {
+        margin-top: 1rem;
+        font-style: italic;
+        color: #444a40;
+    }
+
+    .offerName {
+        font-size: 1.35rem;
+    }
+
+    .offerPrice {
+        margin-bottom: .5rem;
+        font-size: 1.3rem;
+}
+
+.cardProductInfo > p {
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+.productBrand, .productPrice, .productName {
+    line-height: 2rem;
+}
+
+    .productBrand {
+        margin-bottom: 0;
+        
+        font-style: italic;
+        color: #444a40;
+    }
+
+    .productName, .productPrice {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+
+
+
+/* GRAPHICS */
+
+img {
+    object-fit: contain;
+}
+
+
+.logo {
+    width: 250px;
+}
+
+.gallery {
+    display: grid;
+    grid: 4fr 4fr 1fr / repeat(3, 1fr);
+    gap: 2rem;
+    place-content: center;
+    padding: 5%;
+}
+
+.offerImage {
+    border: 1px solid #444a40;
+    border-radius: 10px;
+    background: white;
+    width: 100%;
+}
+
+.cardOffer {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    
+    background: wheat;
+    border: 2px solid #444a40;
+    border-radius: 10px;
+    
+    color: #0f0f0f;
+    text-align: center;
+}
+
+.cardProduct {
+    display: flex;
+    flex-direction: column;
+    
+    background: wheat;
+    border: 2px solid #444a40;
+    border-radius: 10px;
+    
+    color: #0f0f0f;
+    text-align: center;
+}
+
+.cardProductContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardProductMain {
+    display: flex;
+    align-items: center;
+}
+
+.cardProductImage, .cardProductInfo, .cardProductList {
+    width: 33%;
+}
+
+    .cardProductImage {
+        padding: 1rem;
+    }
+
+        .productImage {
+            width: 100%;
+            height: 70%;
+            border: 1px solid #444a40;
+            border-radius: 10px;
+            background: white;
+            padding: 1rem;
+        }
+
+    .cardProductInfo {
+        padding: 0 2rem;
+    }
+
+    .cardProductList {
+        padding: 2rem 0;
+        text-align: left;
+    }
+
+        .cardProductList > h4 {
+            padding-left: 2.5rem;
+            font-weight: 500;
+        }
+
+.offerImage {
+    padding: 1rem;
+}
+
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+    .aboutShop, .aboutArea {
+        display: flex;
+        margin: 0 5%;
+
+        border: 1px solid #111;
+    }
+
+    .aboutShop {
+        margin-top: 3rem;
+    }
+
+    .aboutArea {
+        margin-bottom: 3rem;
+    }
+
+    .aboutPic {
+        height: 100%;
+        max-width: 40%;
+    }
+
+    .aboutInfo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+        background: #444a40;
+        color: #111;
+        outline: 1px solid #111;
+    }
+
+        .aboutInfoText {
+            padding: 1rem 0;
+        }
+
+.overviewService {
+    padding: 2rem 5% 0 5%;
+
+    text-align: center;
+}
+
+.overviewService > p {
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    }
+
+        .serviceContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
+    padding-top: 2rem;
+}
+
+        .hireContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
+    padding: 2rem 5%;
+
+}
+
+
+.cardService {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    background: #444a40;
+    border: 1px solid #2f2a22;
+    border-radius: 10px;
+    
+    color: #dddfe8;
+    line-height: 2rem;
+}
+
+    .cardService > ul {
+        margin: 0 1rem;
+    }
+
+.cardHire {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    background: #444a40;
+    border: 1px solid #2f2a22;
+    border-radius: 10px;
+    
+    color: #dddfe8;
+    line-height: 2rem;
+}
+
+.shopContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.socials {
+    padding: 3rem 0 0 0;
+}
+
+    .thumbnail {
+        height: 35px;
+        /* width: 35px; */
+        margin: 0 1rem;
+    }
+
+.eventsContainer {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+.searchFilter {
+    width: 20%;
+    margin: 0;
+    background: #444a40;
+    /* padding: 1rem; */
+}
+
+    .searchFilter > h3 {
+        background: darkolivegreen;
+        width: 100%;
+        height: 3rem;
+        padding: 1rem;
+    }
+
+.events {
+    display: grid;
+    grid: repeat(8, min-content) / repeat(2, 1fr);
+    gap: 1rem;
+    width: 100%;
+}
+
+    .cardEvents {
+        width: 100%;
+        background: #444a40;
+    }
+
+
+/* EFFECTS */
+
+.banner {
+    border-top: 1px solid #444a40;
+    border-bottom: 1px solid #444a40;
+}
+
+    main h2:first-of-type {
+        border-top: none;
+    }
+
+
+
+/* INTERACTION */
+
+.newsletter {
+    justify-items: center;
+    padding: 2rem 0;
+
+    background: #d7591a;
+}
+
+form {
+    margin: 1rem 0;
+}
+
+    .searchFilter > form {
+        padding: 1rem;
+        color: #dddfe8;
+    }
+
+input {
+    margin: .5rem 0;
+}
+
+details {
+    margin-top: 1rem;
+}
+
+summary {
+    margin-bottom: .5rem;
+    font-size: 1.3rem;
+}
+
+iframe {
+    width: 100%;
+}
+
+.location {
+    display: flex;
+    justify-self: center;
+    width: 100%;
+    padding-left: 15%;
+    gap: 5rem;
+}
+
+    .locationInfo {
+        width: 50%;
+    }
+
+    .locationInfo > h3:first-of-type {
+        padding-top: 1rem;
+    }
+
+    .locationInfo > aside {
+        padding-bottom: 3rem;
+    }
+
+
+/* MOBILE VIEW */
+
+@media screen and (max-width: 768px) {
+    
+    header {
+        align-items: center;
+    }
+
+        .titleContainer {
+            display: none;
+        }
+    
+    nav {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: .1rem;
+        padding: 0;
+        background: darkolivegreen;
+        border-top: none;
+}
+
+        nav a {
+            width: 100%;
+            padding: 1rem 0;
+            margin-bottom: 1rem;
+
+            background: #2f2a22;
+            border-top: 2px solid #c29a74;
+            border-bottom: 2px solid #c29a74;
+            
+            font-size: 1.8rem;
+            color: #d7591a;
+        }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: .5rem;
+    }
+
+        .footerInfo {
+            text-align: center;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+            .address, .contact {
+                text-align: center;
+            }
+
+    p {
+        font-size: 1.35rem;
+    }
+
+    h2 {
+        font-size: 2.2em;
+    }
+    
+    h3 {
+        font-size: 1.7rem;
+    }
+
+    h4 {
+        font-size: 1.6rem;
+    }
+
+        aside {
+        font-size: 1.3rem;
+    }
+
+    .offerName, .offerPrice {
+        font-size: 1.7rem;
+    }
+
+    .offerPrice {
+        padding-top: 1rem;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .gallery > img {
+            max-width: 100%;
+        }
+
+        .gallery > .button {
+            grid-column-start: span 2;
+            width: 100%;
+        }
+
+    .serviceContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+        .cardService > ul > li {
+            margin: 0 1rem;
+            line-height: 2.2rem;
+            font-size: 1.4rem;
+        }
+
+    .aboutShop, .aboutArea {
+        flex-direction: column;
+    }
+        
+        .aboutInfo > .aboutInfoText > p {
+            padding: 0 1.5rem;
+            
+            font-size: 1.35rem;
+            text-align: justify;
+        }
+
+                .aboutShop > .aboutInfo > h3 {
+                    padding-left: 1.5rem;
+                }
+
+                .aboutArea > .aboutInfo > h3 {
+                    text-align: left;
+                    padding-left: 1.5rem;
+                }
+
+    .aboutPic {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .overviewService {
+        padding: 1rem 5% 0 5%;
+        text-align: left;
+    }
+
+    .hireContainer {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .termsHire {
+        padding: 0 5% 3rem 5%;
+        text-align: left;
+    }
+
+    .location {
+        flex-direction: column;
+        padding: 10% 5%;
+    }
+
+    .locationInfo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cardProductMain {
+        flex-direction: column;
+    }
+
+    .cardProductInfo, .cardProductList, .cardProductImage {
+        width: 100%;
+    }
+
+    .cardProductInfo > p, .cardProductList > h4, .cardProductList > ul > li {
+        font-size: 1.35rem;
+        padding: 0 5%;
+    }
+
+    .cardProductInfo > p, .cardProductList > h4 {
+        text-align: center;
+    }
+
+    .cardProductList > h4 {
+        font-size: 1.6rem;
+    }
+
+    .cardProductList > ul > li {
+        padding: 0 1rem;
+    }
+
+    .newsletter > p {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .eventsContainer {
+        flex-direction: column;
+    }
+
+    .searchFilter {
+        width: 100%;
+    }
+
+    form > h4 {
+        margin-top: 1.5rem;
+    }
+
+    .events {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* DEBUG */
+
+/* * {outline: 1px solid blue;} */
