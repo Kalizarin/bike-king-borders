@@ -63,7 +63,6 @@ footer {
 
     background: darkolivegreen;
     padding: 4rem 7.5% 3rem 7.5%;
-    /* filter: drop-shadow(0px 2px 5px black); */
 }
 
     .footerInfo {
@@ -76,7 +75,6 @@ footer {
     }
 
     .address, .hours, .contact {
-        /* margin: 0 1rem; */
         width: 100%;
     }
 
@@ -131,7 +129,6 @@ nav {
     padding: 0 15%;
     background: #2f2a22;
     border-top: 3px solid #d7591a;
-    /* border-bottom: 2px solid #d7591a; */
 }
 
 .button {
@@ -148,7 +145,7 @@ nav {
     border: 2px solid #2f2a22;
 }   
 
-    section > .button {
+    div > .button {
         grid-column-start: span 3;
         justify-self: end;
         align-self: end;
@@ -537,6 +534,7 @@ img {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin: 1rem;
     
     background: #444a40;
     border: 1px solid #2f2a22;
@@ -570,12 +568,12 @@ img {
 }
 
 .socials {
-    padding: 3rem 0 0 0;
+    padding: 3rem 30% 0 30%;
+    display: flex;
 }
 
     .thumbnail {
         height: 35px;
-        /* width: 35px; */
         margin: 0 1rem;
     }
 
@@ -779,6 +777,7 @@ iframe {
         flex-direction: column;
         align-items: center;
         gap: 2rem;
+        margin: 0 1rem;
     }
 
         .cardService > ul > li {
